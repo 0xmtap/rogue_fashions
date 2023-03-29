@@ -5,8 +5,9 @@ import styles from '@/styles/Home.module.css'
 import { Box, Button } from '@mui/material'
 import { app } from '@/firebase'
 import { useRouter } from 'next/router'
+import HeroSection from '../components/HomePage/HeroSection';
+import MerchandiseSection from '../components/HomePage/Merchandise';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
@@ -14,12 +15,15 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <Box>
-      <Button
-        onClick={() => router.push('/terms')}
-      >
-        Terms
-      </Button>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '4vh'
+      }}
+    >
+      <HeroSection />
+      <MerchandiseSection />
     </Box>
   )
 }

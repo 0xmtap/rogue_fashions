@@ -6,9 +6,10 @@ const Index = () => {
     return (
         <AppBar
             sx={{
-                backgroundColor: 'white',
+                backgroundColor: '#F7F7F7',
                 boxShadow: 'none',
-                px: 0,
+                pl: 2.5,
+                pr: 2.5,
                 mx: 0
             }}
         >
@@ -20,7 +21,7 @@ const Index = () => {
             >
                 <Toolbar
                     sx={{
-                        width: '95vw',
+                        width: '90vw',
                         m: 0,
                         color: 'black',
                         display: 'flex',
@@ -32,25 +33,26 @@ const Index = () => {
                         <Typography
                             sx={{
                                 fontFamily: 'Rapier',
-                                fontSize: '25px',
-                                color: '#85111D'
+                                fontSize: '35px',
+                                // color: '#85111D'
+                                color: 'black'
                             }}
                         >
-                            Rogue F.
+                            ROGUE<span style={{ color: '#85111D' }}>.</span>
                         </Typography>
                     </Box>
 
                     <Box
                         sx={{
                             display: 'flex',
-                            gap: '1vw'
+                            gap: '2vw'
                         }}
                     >
                         <Button
                             sx={{
                                 color: 'black',
                                 fontSize: '14px',
-                                fontFamily: 'Futura',
+                                fontFamily: 'Montserrat',
                                 borderRadius: '30px',
                                 ":hover": {
                                     color: '#85111B',
@@ -64,7 +66,7 @@ const Index = () => {
                             sx={{
                                 color: 'black',
                                 fontSize: '14px',
-                                fontFamily: 'Futura',
+                                fontFamily: 'Montserrat',
                                 borderRadius: '30px',
                                 ":hover": {
                                     color: '#85111B',
@@ -79,7 +81,21 @@ const Index = () => {
                             sx={{
                                 color: 'black',
                                 fontSize: '14px',
-                                fontFamily: 'Futura',
+                                fontFamily: 'Montserrat',
+                                borderRadius: '30px',
+                                ":hover": {
+                                    color: '#85111B',
+                                    backgroundColor: 'transparent'
+                                }
+                            }}
+                        >
+                            Collections
+                        </Button>
+                        <Button
+                            sx={{
+                                color: 'black',
+                                fontSize: '14px',
+                                fontFamily: 'Montserrat',
                                 borderRadius: '30px',
                                 ":hover": {
                                     color: '#85111B',
@@ -100,21 +116,35 @@ const Index = () => {
                         <IconButton>
                             <Search
                                 sx={{
-                                    color: 'rgba(0, 0, 0, 0.3)'
+                                    color: 'rgba(0, 0, 0, 1)'
                                 }}
                             />
                         </IconButton>
-                        <IconButton>
+                        <IconButton
+                            sx={{
+                                backgroundColor: 'white',
+                                borderRadius: '10px',
+                                boxShadow: '0px 1px 2px 0px rgba(0, 0, 0, 0.2)',
+                                ":hover": {
+                                    color: '#85111D'
+                                }
+                            }}
+                        >
                             <ShoppingCart
                                 sx={{
-                                    color: 'rgba(0, 0, 0, 0.3)'
+                                    color: 'rgba(0, 0, 0, 1)',
+                                    ":hover": {
+                                        color: '#85111D'
+                                    }
                                 }}
                             />
                         </IconButton>
-                        <IconButton>
+                        <IconButton
+
+                        >
                             <Person
                                 sx={{
-                                    color: 'rgba(0, 0, 0, 0.3)'
+                                    color: 'rgba(0, 0, 0, 1)'
                                 }}
                             />
                         </IconButton>

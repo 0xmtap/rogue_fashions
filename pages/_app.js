@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }) {
     <>
     <Navbar />
     <Box
-      mt={7}
+      mt={8.5}
     >
       <Component {...pageProps} />
       </Box>
