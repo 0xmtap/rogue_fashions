@@ -29,13 +29,18 @@ export default function App({ Component, pageProps }) {
   Router.events.on('routeChangeError', progress.finish);
 
   return (
-    <>
+    <Box
+      sx={{
+        maxWidth: '100vw',
+        overflowX: 'hidden'
+      }}
+    >
     <Navbar />
     <Box
       mt={8.5}
     >
       <Component {...pageProps} />
       </Box>
-    </>
+    </Box>
   )
 }
