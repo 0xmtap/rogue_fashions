@@ -60,7 +60,7 @@ const Index = () => {
                                 }
                             }}
                         >
-                            Men's
+                            Men&apos;s
                         </Button>
                         <Button
                             sx={{
@@ -75,7 +75,7 @@ const Index = () => {
                             }}
 
                         >
-                            Women's
+                            Women&apos;s
                         </Button>
                         <Button
                             sx={{
