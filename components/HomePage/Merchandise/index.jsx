@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Index = () => {
 
-    const [filter, setFilter] = useState('both');
+    const [filter, setFilter] = useState('all');
 
     return (
         <Box
@@ -116,7 +116,8 @@ const Index = () => {
                             sx={{
                                 display: 'flex',
                                 justifyContent: 'center',
-                                alignItems: 'center'
+                                alignItems: 'center',
+                                mr: 3.8
                             }}
                         >
                         <ProductCard data={m} />

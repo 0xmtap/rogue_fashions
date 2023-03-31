@@ -11,11 +11,11 @@ const Index = () => {
                 backgroundImage:   `url('/images/herobanner.png')`,
                 width: '100vw',
                 height: '80vh',
+                maxHeight: '864px',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center'
             }}
-
         >
             <Typography
                 sx={{
