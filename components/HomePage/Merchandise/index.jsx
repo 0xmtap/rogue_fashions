@@ -11,7 +11,7 @@ const Index = () => {
     return (
         <Box
             sx={{
-                px: 5,
+                px: [2, 5],
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '3vh',
@@ -31,7 +31,7 @@ const Index = () => {
             <Box
                 sx={{
                     display: 'flex',
-                    gap: '1vw'
+                    gap: ['3vw', '1vw']
                 }}
             >
                 <Chip
@@ -97,12 +97,12 @@ const Index = () => {
             </Box>
             <Grid
                 container
-                columns={{ xs: 10, md: 10, lg: 10 }}
+                columns={{ xs: 2, md: 6, lg: 10 }}
                 rowSpacing={5}
                 sx={{
                     width: '100vw',
                     // paddingX: '20px',
-                    mt: 2
+                    mt: 2,
                 }}
             >
                 {filter === 'all' && merch.slice(0, 5).map((m) =>
@@ -112,18 +112,35 @@ const Index = () => {
                         xs={2}
                         id={m.id}
                     >
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center'
+                            }}
+                        >
                         <ProductCard data={m} />
+                        </Box>
                     </Grid>
                 )}
-                {filter !== 'all' && merch.slice(0,5).map((m) =>
+                {filter !== 'all' && merch.slice(0, 5).map((m) =>
                     m.tags.includes(filter)
                     &&
                     <Grid
+                        key={m.id}
                         item
                         xs={2}
-                        key={m.id}
+                        id={m.id}
                     >
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center'
+                            }}
+                        >
                         <ProductCard data={m} />
+                        </Box>
                     </Grid>
                 )}
             </Grid>
