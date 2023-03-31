@@ -315,7 +315,8 @@ const Index = () => {
 
                     <Box
                         sx={{
-                            gap: '1vw'
+                            gap: '1vw',
+                            display: 'flex'
                         }}
                     >
                         <IconButton
