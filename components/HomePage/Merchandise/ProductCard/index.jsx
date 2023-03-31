@@ -3,26 +3,32 @@ import { Box, Button, Card, CardContent, CardMedia, Typography } from '@mui/mate
 import Image from 'next/image'
 import React from 'react'
 
-const Index = ({data}) => {
+const Index = ({ data }) => {
     return (
         <Card
             className='card-animation'
             sx={{
-                height: '35vh',
-                minWidth: '15vw',
-                maxWidth: '15vw',
+                height: ['45vh', '50vh', '50vh', '35vh'],
+                minWidth: ['70vw', '40vw', '30vw', '15vw'],
+                maxWidth: ['70vw', '40vw', '30vw', '15vw'],
                 borderRadius: '2px',
                 position: 'relative',
                 cursor: 'pointer',
                 boxShadow: 'none',
+                position: 'relative'
+
             }}
             onClick={() => alert('Yet To Be Implemented')}
         >
-            <CardMedia>
+            <CardMedia
+                sx={{
+                }}
+            >
                 <Image
                     src={data.image}
-                    width={280}
-                    height={280}
+                    // width={280}
+                    // height={280}
+                    fill
                     style={{
                         objectFit: 'cover'
                     }}

@@ -53,9 +53,11 @@ const Index = () => {
           display: 'flex',
           justifyContent: 'flex-end',
           alignItems: 'center',
-          bgcolor: bgColor
+          bgcolor: 'rgb(44,89,131)',
+          // bgcolor: 'rgb(0,203,197)'
+
         }}
-        onChange={(e) => getDominantColor(merch[e].image).then((c) => setBgColor(c))}
+        onChange={(e) => getDominantColor(merch[e].image).then((c) => console.log(c))}
         indicators={false}
         navButtonsAlwaysInvisible
       >
