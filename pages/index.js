@@ -7,8 +7,8 @@ import { app } from '@/firebase'
 import { useRouter } from 'next/router'
 import HeroSection from '../components/HomePage/HeroSection';
 import MerchandiseSection from '../components/HomePage/Merchandise';
-
-
+import CelebLookSection from '../components/HomePage/CelebLook';
+import AboutSection from '../components/HomePage/About';
 export default function Home() {
 
   console.log(app);
@@ -19,11 +19,14 @@ export default function Home() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        gap: '4vh'
+        gap: '4vh',
+        minHeight: '100vh'
       }}
     >
       <HeroSection />
       <MerchandiseSection />
+      <CelebLookSection />
+      <AboutSection />
     </Box>
   )
 }

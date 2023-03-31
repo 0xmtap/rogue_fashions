@@ -8,9 +8,9 @@ const Index = ({data}) => {
         <Card
             className='card-animation'
             sx={{
-                height: '35vh',
-                minWidth: '15vw',
-                maxWidth: '15vw',
+                height: '50vh',
+                minWidth: '25vw',
+                maxWidth: '25vw',
                 borderRadius: '2px',
                 position: 'relative',
                 cursor: 'pointer',
@@ -21,8 +21,8 @@ const Index = ({data}) => {
             <CardMedia>
                 <Image
                     src={data.image}
-                    width={280}
-                    height={280}
+                    width={385}
+                    height={375}
                     style={{
                         objectFit: 'cover'
                     }}
