@@ -107,6 +107,7 @@ const Index = () => {
             >
                 {filter === 'all' && merch.slice(0, 5).map((m) =>
                     <Grid
+                        key={m.id}
                         item
                         xs={2}
                         id={m.id}
@@ -120,7 +121,7 @@ const Index = () => {
                     <Grid
                         item
                         xs={2}
-                        id={m.id}
+                        key={m.id}
                     >
                         <ProductCard data={m} />
                     </Grid>
