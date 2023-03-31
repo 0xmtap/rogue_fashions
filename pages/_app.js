@@ -4,6 +4,7 @@ import ProgressBar from '@badrap/bar-of-progress';
 import { Router } from 'next/router';
 import Navbar from '../components/commons/Navbar';
 import { Box } from '@mui/material';
+import Footer from '../components/commons/Footer';
 
 export default function App({ Component, pageProps }) {
   const [child, setChild] = useState();
@@ -35,12 +36,13 @@ export default function App({ Component, pageProps }) {
         overflowX: 'hidden'
       }}
     >
-    <Navbar />
-    <Box
-      mt={8.5}
-    >
-      <Component {...pageProps} />
+      <Navbar />
+      <Box
+        mt={8.5}
+      >
+        <Component {...pageProps} />
       </Box>
+      <Footer />
     </Box>
   )
 }
