@@ -12,90 +12,7 @@ const Index = () => {
 
   const [bgColor, setBgColor] = useState('#1ca7c3');
 
-  // getDominantColor('/images/ui/Arrivals.png').then((c) => setBgColor(c))
-
   return (
-    // <Box
-    //   sx={{
-    //     display: 'flex',
-    //     flexDirection: 'column',
-    //     height: '100vh'
-    //     // position: 'relative'
-    //   }}
-    // >
-    //   <Box
-    //     sx={{
-    //       display: 'flex',
-    //       flexDirection: ['column', 'column', 'row'],
-    //     }}
-    //   >
-    //     <Box
-    //       sx={{
-    //         flex: 1,
-    //         zIndex: 999,
-    //         height: '600px',
-    //         position: ['', '', 'relative']
-    //       }}
-    //     >
-    //       <Image
-    //         src={'/images/ui/New Arrival.jpg'}
-    //         fill
-    //         style={{
-    //           objectFit: 'cover',
-    //         }}
-    //       />
-    //       <Typography
-    //         sx={{
-    //           textAlign: 'center',
-    //           fontFamily: 'Rapier',
-    //           fontSize: '70px',
-    //           color: 'white',
-    //           position: 'absolute',
-    //           bottom: '25%',
-    //           left: '20%'
-    //         }}
-    //       >
-    //         NEW <br />ARRIVALS!
-    //       </Typography>
-    //     </Box>
-    //     <Box
-    //       sx={{
-    //         flex: 1,
-    //         zIndex: 999,
-    //         height: '600px',
-    //         position: ['', '', 'relative']
-    //       }}
-    //     >
-    //       <Carousel
-    //         sx={{
-    //           flex: 1,
-    //           height: '600px',
-    //           // bgcolor: '#ed118c',
-    //           bgcolor: bgColor
-    //         }}
-    //         onChange={(e) => getDominantColor(merch[e].image).then((c) => setBgColor(c))}
-    //         indicators={false}
-    //         navButtonsAlwaysInvisible
-    //       >
-    //         {merch.map((m, i) =>
-    //           <Box
-    //             key={i}
-    //             sx={{
-    //               width: '100%',
-    //               height: '600px',
-    //               display: 'flex',
-    //               justifyContent: 'center',
-    //               alignItems: 'center'
-    //             }}
-    //           >
-    //             <ProductCard data={m} />
-    //           </Box>
-    //         )}
-
-    //       </Carousel>
-    //     </Box>
-    //   </Box>
-    // </Box>
     <Box
       sx={{
         display: 'flex',
@@ -144,6 +61,7 @@ const Index = () => {
       >
         {merch.map((m, i) =>
           <Box
+            key={i}
             sx={{
               height: ['60vh', '80vh', '80vh', '90vh'],
               display: 'flex',
