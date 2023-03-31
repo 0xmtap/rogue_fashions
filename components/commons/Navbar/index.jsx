@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
 
-const SubDrawer = ({open, setOpen}) => {
+const SubDrawer = ({ open, setOpen }) => {
     return (
         <Box
             px={2}
@@ -128,7 +128,7 @@ const SubDrawer = ({open, setOpen}) => {
                     }}
                 >
                     <ShoppingCart
-                    
+
                     />
                     <Typography
                         sx={{
@@ -315,11 +315,14 @@ const Index = () => {
 
                     <Box
                         sx={{
-                            display: ['none', 'flex', 'flex'],
                             gap: '1vw'
                         }}
                     >
-                        <IconButton>
+                        <IconButton
+                            sx={{
+                                display: ['none', 'flex', 'flex'],
+                            }}
+                        >
                             <Search
                                 sx={{
                                     color: 'rgba(0, 0, 0, 1)'
@@ -328,6 +331,7 @@ const Index = () => {
                         </IconButton>
                         <IconButton
                             sx={{
+                                display: ['none', 'flex', 'flex'],
                                 backgroundColor: 'white',
                                 borderRadius: '10px',
                                 boxShadow: '0px 1px 2px 0px rgba(0, 0, 0, 0.2)',
@@ -346,7 +350,10 @@ const Index = () => {
                             />
                         </IconButton>
                         <IconButton
+                            sx={{
+                                display: ['none', 'flex', 'flex'],
 
+                            }}
                         >
                             <Person
                                 sx={{
