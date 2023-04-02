@@ -5,12 +5,18 @@ import React from 'react'
 const Index = () => {
     return (
         <Box
+            sx={{
+                overflowY: 'hidden',
+                overflowX: 'hidden',
+            }}
         >
             <Box
                 sx={{
                     display: 'flex',
                     flexDirection: ['column', 'column', 'row', 'row'],
-                    gap: '2vw'
+                    gap: '2vw',
+                    overflowY: 'hidden',
+                    overflowX: 'hidden'
                 }}
             >
                 <Box

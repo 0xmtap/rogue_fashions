@@ -15,7 +15,9 @@ const Index = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '3vh',
-                position: 'relative'
+                position: 'relative',
+                overflowY: 'hidden',
+                overflowX: 'hidden'
                 // minHeight: '100vh',
             }}
         >
@@ -99,9 +101,12 @@ const Index = () => {
                 container
                 columns={{ xs: 2, md: 6, lg: 10 }}
                 rowSpacing={5}
+                columnSpacing={3}
                 sx={{
-                    width: '100vw',
+                    // width: '100vw',
                     // paddingX: '20px',
+                    overflowY: 'hidden',
+                    overflowX: 'hidden',
                     mt: 2,
                 }}
             >
@@ -117,7 +122,7 @@ const Index = () => {
                                 display: 'flex',
                                 justifyContent: 'center',
                                 alignItems: 'center',
-                                mr: 3.8
+                                // mr: 3.8
                             }}
                         >
                         <ProductCard data={m} />

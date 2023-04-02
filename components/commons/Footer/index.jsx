@@ -11,10 +11,12 @@ const Index = () => {
                 flexDirection: ['column', 'column', 'row'],
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                height: '30vh',
+                // height: '30vh',
                 py: 5,
                 px: 5,
-                gap: '3vw'
+                gap: '3vw',
+                overflowY: 'hidden',
+                overflowX: 'hidden'
             }}
         >
             <Box

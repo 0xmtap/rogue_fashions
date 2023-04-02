@@ -20,7 +20,9 @@ export default function Home() {
         display: 'flex',
         flexDirection: 'column',
         gap: '4vh',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        overflowY: 'hidden',
+        overflowX: 'hidden'
       }}
     >
       <HeroSection />
