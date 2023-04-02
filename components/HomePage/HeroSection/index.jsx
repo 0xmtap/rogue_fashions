@@ -10,11 +10,12 @@ const Index = () => {
                 position: 'relative',
                 backgroundImage:   `url('/images/herobanner.png')`,
                 width: '100vw',
-                height: '80vh',
-                maxHeight: '864px',
+                minHeight: '80vh',
+                maxHeight: '900px',
+                overflowY: 'hidden',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center'
+                alignItems: 'center',
             }}
         >
             <Typography

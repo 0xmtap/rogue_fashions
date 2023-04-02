@@ -16,7 +16,8 @@ const Index = () => {
     <Box
       sx={{
         display: 'flex',
-        flexDirection: ['column', 'column', 'column', 'row']
+        flexDirection: ['column', 'column', 'column', 'row'],
+        overflowY: 'hidden',
       }}
     >
 
