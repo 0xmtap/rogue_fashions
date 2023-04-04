@@ -12,7 +12,6 @@ import AboutSection from '../components/HomePage/About';
 export default function Home() {
 
   console.log(app);
-  const router = useRouter();
 
   return (
     <Box

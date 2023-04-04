@@ -6,8 +6,8 @@ const Index = () => {
     return (
         <Box
             sx={{
-                overflowY: 'hidden',
-                overflowX: 'hidden',
+                // overflowY: 'hidden',
+                // overflowX: 'hidden',
             }}
         >
             <Box

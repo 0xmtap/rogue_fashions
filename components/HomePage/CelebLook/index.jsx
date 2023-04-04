@@ -17,7 +17,7 @@ const Index = () => {
       sx={{
         display: 'flex',
         flexDirection: ['column', 'column', 'column', 'row'],
-        overflowY: 'hidden',
+        // overflowY: 'hidden',
       }}
     >
 
@@ -29,17 +29,27 @@ const Index = () => {
           alignItems: 'center',
           height: ['60vh', '80vh', '80vh', '90vh'],
           position: 'relative',
-          backgroundImage: `url('/images/ui/Arrival.jpg')`,
+          // backgroundImage: `url()`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover'
         }}
       >
+        <Image 
+          src={'/images/ui/Arrival.jpg'}
+          fill
+          style={{
+            objectFit: 'cover',
+            zIndex: 0,
+            objectPosition: 'center bottom'
+          }}
+        />
         <Typography
           sx={{
             fontFamily: 'Rapier',
             fontSize: ['60px', '80px'],
             color: 'white',
-            textAlign: 'center'
+            textAlign: 'center',
+            zIndex: 1
           }}
         >
           New<br /> Arrivals!
