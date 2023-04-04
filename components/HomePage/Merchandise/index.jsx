@@ -16,8 +16,8 @@ const Index = () => {
                 flexDirection: 'column',
                 gap: '3vh',
                 position: 'relative',
-                overflowY: 'hidden',
-                overflowX: 'hidden'
+                // overflowY: 'hidden',
+                // overflowX: 'hidden'
                 // minHeight: '100vh',
             }}
         >
